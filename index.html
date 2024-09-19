@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socially</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="imge/back-image.png">
+</head>
+
+<body>
+<div id="chang"></div>
+    <div class="hero">
+        <nav>
+            <div class="logo">
+                <img src="imge/logo.png" alt="Logo">
+            </div>
+            <ul>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">How it works</a></li>
+                <li><a href="#">Privacy</a></li>
+            </ul>
+        <div class="down">
+            <a href="" class="login-btn" >Log in</a>
+            <a href="" class="btn" >Download App</a>
+        </div>
+            <div class="chang-web">
+                <img id="moon" src="imge/moon.png" alt="">
+            </div>
+        </nav>
+
+        <div class="content">
+            <h1 class="anim" >
+                Make <br> New Friends
+            </h1>
+            <p class="anim" >
+                Socially connects people worldwide. Discover new people, meet new people, and build lasting connections.
+            </p>
+            <a href="#" class="btn anim "  >Join Now</a>
+        </div>
+        <img class="right-img  anim " src="imge/pic.png" alt="">
+    </div>
+
+
+    <script>
+        const moon = document.getElementById("moon");
+        moon.onclick = function(){
+            document.body.classList.toggle("dark")
+            if( document.body.classList.contains("dark")){
+                moon.src = "imge/sun.png";
+            }else{
+                moon.src = "imge/moon.png"
+            }
+        }
+
+        setTimeout(function(){
+            document.getElementById("chang").style.display = "none";
+        },3000)
+
+    </script>
+</body>
+</html>
